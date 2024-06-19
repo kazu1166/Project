@@ -1,0 +1,59 @@
+body {
+  font-family: "Playwrite PL";
+  text-align: center;
+  font-size: 1.2rem;
+  background: linear-gradient(to bottom, rgba(157, 157, 179, 0.8) 0%, rgba(181, 156, 156, 0.8) 100%), url(background.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  
+}
+
+header{
+  margin-bottom: 80px;
+}
+
+.lyrics div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-family: "Lora";
+}
+
+.cruelty {
+  color: rgb(88, 88, 88);
+  font-family: "Oswald";
+}
+
+.disappointed {
+  color: rgb(1, 1, 97);
+  font-family: "Roboto Slab";
+}
+
+.doubt {
+  color: rgb(69, 4, 155);
+  font-style: italic;
+}
+
+.doubt_will {
+  color: rgb(134, 0, 143);
+  font-style: italic;
+}
+
+.strong_will {
+  color: rgb(191, 0, 0);
+}
+
+.determination {
+  color: rgb(160, 0, 0);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link{
+  margin-top: 80px;
+  text-align: center;
+}
