@@ -1,0 +1,243 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header{
+  display: flex;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  /*background: linear-gradient(to right, #43C6AC, #191654);*/
+  height: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+header .logo-link {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+header .logo-image{
+  height: 80%;
+}
+header .logo-letter {
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Chewy', cursive;
+}
+.nav, .social-media{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+header a {
+  font-size: 25px;
+  font-family: 'Chewy', cursive;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: yellow;
+}
+.nav-link:active {
+  color: red;
+}
+
+
+/* main */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  background: linear-gradient(to bottom, #ffffff, #eeeeee, #bbbbbb, #555555, #111111);
+  */
+  background: linear-gradient(to right, #6DD5FA, #6497b9);
+
+}
+
+.home-image{
+  background-image: url("./images/t1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 70%;
+}
+
+.mid{
+  height: 40vh;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  scroll-margin-top: 10vh;
+  transition: all 0.2s;
+}
+
+#mid1{
+  background: linear-gradient(to right, #43C6AC, #4d499f);
+  /*background: linear-gradient(to right, #00b09b, #96c93d);*/
+  /* background-color: #57b759; */
+}
+
+.mid:hover{
+  height: 50vh;
+  transition: all 0.2s;
+}
+
+.about h2{
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: 'Chewy', cursive;
+}
+
+.content-image{
+  height: 30vh;
+}
+
+section .about{
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.second-image{
+  background-image: url("./images/cow.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+#mid2{
+  background: linear-gradient(to right, #43C6AC, #4d499f);
+  /*background: linear-gradient(to right, #00b09b, #96c93d);*/
+  /* background-color: #c9c15a; */
+}
+
+.shop-link {
+  margin-top: 100px;
+}
+
+.third-image{
+  background-image: url("./images/2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  /*background: linear-gradient(to right, #43C6AC, #191654);*/
+  /* 
+  background-color: rgb(217, 104, 104);
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  */
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 20px;
+}
+
+.company-info, form {
+  width: 50%;
+  padding: 20px;
+}
+
+footer .company-header {
+  display: flex;
+  justify-content: center;
+}
+
+footer .logo-image{
+  height: 5vh;
+  margin-right: 10px;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-family: 'Chewy', cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.form-flex {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.flex-left, .flex-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form input,
+form textarea,
+form .submit {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.flex-left input {
+  height: calc((100% - 30px) / 4);
+  margin-bottom: 10px;
+}
+
+.flex-left input:last-child {
+  margin-bottom: 0;
+}
+
+form textarea {
+  height: calc(100% - 40px);
+  resize: none;
+}
+
+form .submit {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+}
+
+form .submit:hover {
+  background-color: #555;
+}
